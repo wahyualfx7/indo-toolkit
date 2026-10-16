@@ -1,0 +1,1 @@
+export { parseIndoDate } from '../index';

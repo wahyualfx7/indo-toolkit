@@ -1,0 +1,1 @@
+export { generateDocumentNumber } from '../index';

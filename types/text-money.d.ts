@@ -1,0 +1,1 @@
+export { parseMoney } from '../index';

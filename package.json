@@ -1,0 +1,90 @@
+{
+  "name": "indo-toolkit",
+  "version": "1.0.0",
+  "description": "Utilitas JavaScript untuk teks, kontak, tanggal, uang, dokumen, dan pesanan Indonesia.",
+  "license": "MIT",
+  "type": "commonjs",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./chat-date": {
+      "types": "./types/chat-date.d.ts",
+      "import": "./esm/chat-date.mjs",
+      "require": "./src/chat-date.cjs"
+    },
+    "./bank-parser": {
+      "types": "./types/bank-parser.d.ts",
+      "import": "./esm/bank-parser.mjs",
+      "require": "./src/bank-parser.cjs"
+    },
+    "./unit-parser": {
+      "types": "./types/unit-parser.d.ts",
+      "import": "./esm/unit-parser.mjs",
+      "require": "./src/unit-parser.cjs"
+    },
+    "./text-money": {
+      "types": "./types/text-money.d.ts",
+      "import": "./esm/text-money.mjs",
+      "require": "./src/text-money.cjs"
+    },
+    "./document-number": {
+      "types": "./types/document-number.d.ts",
+      "import": "./esm/document-number.mjs",
+      "require": "./src/document-number.cjs"
+    },
+    "./contact-cleaner": {
+      "types": "./types/contact-cleaner.d.ts",
+      "import": "./esm/contact-cleaner.mjs",
+      "require": "./src/contact-cleaner.cjs"
+    },
+    "./privacy-mask": {
+      "types": "./types/privacy-mask.d.ts",
+      "import": "./esm/privacy-mask.mjs",
+      "require": "./src/privacy-mask.cjs"
+    },
+    "./order-parser": {
+      "types": "./types/order-parser.d.ts",
+      "import": "./esm/order-parser.mjs",
+      "require": "./src/order-parser.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "esm/",
+    "types/",
+    "index.cjs",
+    "index.mjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "example": "node examples/basic.cjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "indonesia",
+    "bahasa-indonesia",
+    "rupiah",
+    "nik",
+    "npwp",
+    "whatsapp",
+    "pesanan",
+    "tanggal",
+    "javascript",
+    "nodejs"
+  ]
+}
